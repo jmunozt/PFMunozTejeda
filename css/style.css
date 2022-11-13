@@ -63,6 +63,7 @@
    width: 100%; 
 }
 
+
 /* Fin de estilos generales*/
 
 /* Estilos para el header */
@@ -78,7 +79,7 @@
 
 .anuncio p{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     color: white;
     padding-top: 10px;
     
@@ -86,15 +87,15 @@
 
 .telefono-icon
 {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     padding: 5px;
 }
 
 .logo
 {
-    height: 90px;
-    width: 320px;
+    height: 85px;
+    width: 310px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -109,14 +110,17 @@
     flex-wrap: wrap;
 }
 
-.anuncio2 h2{
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: smaller;
+.anuncio2 h1{
+
+    font-family: 'Fira Sans', sans-serif;
+    font-size: medium;
+    text-align: center;
     color: white;
     padding-top: 4px;
     
 }
+
 
 
 .item-menu
@@ -360,3 +364,33 @@
 }
 
 /*Fin de estilos para el página marcas*/
+
+
+/*Media query*/
+
+@media only screen and (min-width: 100px) and (max-width: 500px)
+ {
+    .logo
+    {
+        height: 45px;
+        width: 160px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }    
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 980px)
+ {
+    .logo
+    {
+        height: 60px;
+        width: 212px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }    
+}
+
+
+
+/*Fin de media query*/
