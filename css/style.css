@@ -52,9 +52,29 @@
 
 .texto-subtitulo{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
-    font-weight: 800;
+    font-size: x-large;
+    font-weight: 600;
     color:rgb(11, 78, 180); 
+    padding: 10px;
+}
+
+.texto-subtitulo2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    color:rgb(0, 0, 0); 
+    padding: 15px;
+    display: flex;
+    justify-content: center;  
+}
+
+.texto-subtitulo3{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: medium;
+    font-weight: 200;
+    color:rgb(117, 116, 116); 
+    display: flex;
+    justify-content: center;  
 }
 
 
@@ -75,6 +95,10 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    animation-duration: 6s;
+    animation-name: Mostrar-telefono;
+    animation-iteration-count: infinite;
+
 }
 
 .anuncio p{
@@ -117,7 +141,7 @@
     font-size: medium;
     text-align: center;
     color: white;
-    padding-top: 4px;
+    padding: 4px;
     
 }
 
@@ -131,6 +155,14 @@
     text-decoration: none;
 }
 
+.alerta-posicion
+{
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
 
 
 /*Fin de estilos para Header*/
@@ -354,7 +386,15 @@
 {
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 
+}
+
+.item-seleccion
+{
+    width: 250px;
+    height: 96px;
 }
 
 .item-seleccion:hover
@@ -362,6 +402,7 @@
     transform: translate(10px,10px);
     transition: all 0.8s;
 }
+
 
 /*Fin de estilos para el página marcas*/
 
@@ -372,11 +413,28 @@
  {
     .logo
     {
-        height: 45px;
-        width: 160px;
+        height: 53px;
+        width: 180px;
         padding-top: 3px;
         padding-bottom: 3px;
     }    
+
+    .item-menu
+    {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: small;
+        font-weight: 500;
+        padding: 6px;
+        text-decoration: none;
+    }
+
+    .item-seleccion
+    {
+        width: 180px;
+        height: 69px;
+    }
+
+
 }
 
 
@@ -389,8 +447,159 @@
         padding-top: 5px;
         padding-bottom: 5px;
     }    
+
+    .item-menu
+    {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: medium;
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .item-seleccion
+    {
+        width: 220px;
+        height: 85px;
+    }
 }
 
 
 
 /*Fin de media query*/
+
+
+/*Animaciones*/
+
+@keyframes Mostrar-telefono 
+{
+    0% 
+    {opacity: 0;}
+    
+    20% 
+    {opacity: 1;}
+    
+    80% 
+    {opacity: 1;}
+    
+    100%
+    {opacity: 0;}
+
+}
+
+/*Fin de Animaciones*/
+
+
+/* timeline en Nosotros*/
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.timeline {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;				
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background: #222222;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.contenedor-time {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.contenedor-time.izquierda-time {
+    left: 0;
+}
+
+.contenedor-time.derecha-time {
+    left: 50%;
+}
+
+.contenedor-time .fecha-time {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: -30px;
+    padding: 4px 0;
+    background: #222222;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.contenedor-time.derecha-time .fecha-time {
+    left: -30px;
+}
+
+.contenedor-time .fecha-time span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contenedor-time .contenido-time {
+    padding: 30px;
+    background: #ffffff;
+    position: relative;
+}
+
+.contenedor-time .contenido-time h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #222222;
+}
+
+.contenedor-time .contenido-time p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #666666;
+}
+
+@media (max-width: 767.98px) {
+    .timeline::after {
+        left: 60px;
+    }
+
+    .contenedor-time {
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 30px;
+    }
+    
+    .contenedor-time.derecha-time {
+        left: 0%;
+    }
+
+    .contenedor-time.izquierda-time .fecha-time, 
+    .contenedor-time.derecha-time .fecha-time {
+        left: 30px;
+    }
+}
+
+/* Fin de timeline en Nosotros*/

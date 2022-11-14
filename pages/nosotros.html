@@ -31,6 +31,9 @@
     <!-- CDN CSS BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- CDN CSS ANIMACIONES https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 <body>
 
@@ -70,8 +73,8 @@
         </nav>
 
          <!--Título h1 de página-->
-        <div class="anuncio2" >        
-            <h1>Somos concesionario autorizado de las marcas Kia y Nissan</h1>
+        <div class="anuncio2">        
+          <h1 class="animate__animated animate__backInLeft">Somos concesionario autorizado de las marcas Kia y Nissan</h1>
         </div>
     </header>
     <!--Fin de la sección Header-->
@@ -79,15 +82,17 @@
     <!--Inicio de la sección Nosotros-->
     <section id="nosotros">
 
-      <div>
-          <img src="../images/nosotros.png" alt="Automotive acerca de nosotros" class="img-fondo-titulo" >
+      <div class= "container">
+        <p class="texto-subtitulo2">Acelera tu Futuro</p>
+        <p class="texto-subtitulo3">Somos Automotive, tu concesionario Kia y Nissan</p>
       </div>
 
-      <div class= "container-fluid">
+      <div class= "container">
         <div class= "row">
           
             <div class="col-sm-12 col-md-12 col-lg-6 nosotros-izquierda">
-              <p class="texto-subtitulo">Acelera tu Futuro</p>
+              <img src="../images/concesionario.jpg" alt="Automotive" class="d-block w-100">
+              <p class="texto-subtitulo3">Local de Automotive Surco</p>
               <p class="texto-normal">Automotive es un concesionario de las marcas Kia y Nissan autorizado por sus filiales en Perú. Somos una empresa relativamente joven, que inicia sus operaciones en el año 2015 en el distrito de Surco - Lima. Actualmente contamos con sedes integrales de ventas, repuestos y servicios de taller en los distritos de Santiago de Surco, San Borja y San Miguel en la ciudad de Lima.</p>
               <p class="texto-normal">Automotive se ha consolidado como uno de los concesionarios con más importancia en Lima, nuestros procesos están marcados por una cultura orientada hacia la satisfacción del cliente. ¡Acelera tu futuro! Es nuestro sello de calidad, optimismo y firme compromiso por clientes felices.</p>
               <p class="texto-subtitulo">Misión</p>
@@ -97,7 +102,59 @@
             </div>
             
             <div class="col-sm-12 col-md-12 col-lg-6 nosotros-derecha">
-              <img src="../images/timeline.png" alt="Time Line de Automotive" class="d-block w-100" >
+                  <p class="texto-subtitulo2">Un poco de historia</p>
+                  <div class="timeline">
+                    <div class="contenedor-time izquierda-time">
+                        <div class="fecha-time">
+                            <span>2015</span>
+                            Dic
+                        </div>
+                        <div class="contenido-time">
+                            <h2>Creación de Automotive</h2>
+                            <p>
+                                Se inaugura Automotive, siendo nuestro primer local, el ubicado en el distrito de Surco.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contenedor-time derecha-time">
+                        <div class="fecha-time">
+                            <span>2017</span>
+                            Dic
+                        </div>
+                        <div class="contenido-time">
+                            <h2>Premiación Distrital</h2>
+                            <p>
+                                Automotive es premiada como el mejor nuevo negocio del distrito de Surco.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contenedor-time izquierda-time">
+                        <div class="fecha-time">
+                            <span>2019</span>
+                            Jul
+                        </div>
+                        <div class="contenido-time">
+                            <h2>Inauguración Automotive San Borja</h2>
+                            <p>
+                                Se inaugura un nuevo local en el distrito de San Borja.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contenedor-time derecha-time">
+                        <div class="fecha-time">
+                            <span>2021</span>
+                            May
+                        </div>
+                        <div class="contenido-time">
+                            <h2>Inauguración Automotive San Miguel</h2>
+                            <p>
+                                A pesar de los inconvenientes nacionales por pandemia, Automotive inagura su nuevo local en San Miguel.
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+
             </div>
         </div>
       </div>  
@@ -106,6 +163,19 @@
 
     </section>
     <!--Fin de la sección Nosotros-->
+
+    <!--Sección Alerta-->
+    <section id="Alertas">
+        <div class="alerta-posicion">
+          <button type="button" onclick="location.href='marcas.html'" class="btn btn-primary position-relative">
+            Mensajes
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 1
+              <span class="visually-hidden">Ud. tiene un mensaje</span>
+            </span>
+          </button>
+        </div>
+    </section>  
+    <!--Fin de Sección Alerta-->
 
     <!--Inicio del Footer-->
     <footer>

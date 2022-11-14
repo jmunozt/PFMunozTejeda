@@ -31,6 +31,9 @@
     <!-- CDN CSS BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- CDN CSS ANIMACIONES https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 <body>
 
@@ -70,8 +73,8 @@
         </nav>
 
          <!--Título h1 de página-->
-        <div class="anuncio2" >        
-            <h1>Contamos con 3 sucursales en Lima metropolitana</h1>
+        <div class="anuncio2">        
+          <h1 class="animate__animated animate__backInLeft">Contamos con 3 sucursales en Lima metropolitana</h1>
         </div>
     </header>
     <!--Fin de la sección Header-->
@@ -79,33 +82,40 @@
     <!--Inicio de la sección Sucursales-->
     <section id="sucursales">
 
-      <div>
-        <img src="../images/sucursales.png" alt="Automotive sucursales" class="img-fondo-titulo" >
+      <div class= "container">
+        <p class="texto-subtitulo2">Nuestras Sucursales</p>
+        <p class="texto-subtitulo3">En 3 lugares claves de la Ciudad</p>
       </div>
 
-      <div class= "container-fluid">
-       
-        <div class= "row filas">
-          
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                  <p class="texto-subtitulo">Santiago de Surco - Lima</p>
-                  <p class="texto-normal">Av. Javier Prado 5821</p>
-                  <iframe class = "frame-maps-suc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.58565356121!2d-76.9608800845752!3d-12.072004445658857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6f98b7cb781%3A0x299f4d460ea595d8!2sAv.%20Javier%20Prado%20Este%205821%2C%20Cercado%20de%20Lima%2015023!5e0!3m2!1sen!2spe!4v1665348552552!5m2!1sen!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Concesionario Automotive Surco Lima"></iframe>
-                </div>
-                
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                  <p class="texto-subtitulo filas">San Borja - Lima</p> 
-                  <p class="texto-normal">Av. Aviación 2001</p>
-                  <iframe class = "frame-maps-suc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4405541152396!2d-77.00673838457499!3d-12.081963545847355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c62c82baa271%3A0x3d548dd63b06c6a9!2sAv.%20Aviaci%C3%B3n%202001%2C%20Cercado%20de%20Lima%2015021!5e0!3m2!1sen!2spe!4v1665348870906!5m2!1sen!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Concesionario Automotive San Borja Lima"></iframe>
-                </div>
+      <div class= "container">
 
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                  <p class="texto-subtitulo">San Miguel - Lima</p>
-                  <p class="texto-normal">Av. La Marina 1705</p>
-                  <iframe class = "frame-maps-suc" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.488741350624!2d-77.08245968457507!3d-12.078657045784741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c972cf801db7%3A0x6102b7995a11c27d!2sAv.%20la%20Marina%201705%2C%20San%20Miguel%2015086!5e0!3m2!1sen!2spe!4v1665348978881!5m2!1sen!2spe"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Concesionario Automotive San Miguel Lima"></iframe>
-                </div>
-         </div>  
-
+        <div class="card frame-maps-suc">
+          <iframe class = "card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.58565356121!2d-76.9608800845752!3d-12.072004445658857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6f98b7cb781%3A0x299f4d460ea595d8!2sAv.%20Javier%20Prado%20Este%205821%2C%20Cercado%20de%20Lima%2015023!5e0!3m2!1sen!2spe!4v1665348552552!5m2!1sen!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Concesionario Automotive Surco Lima"></iframe>
+          <div class="card-body">
+            <p class="texto-subtitulo">Santiago de Surco - Lima.</p>
+            <p class="card-text">Av. Javier Prado 5821.</p>
+            <p class="card-text">Horario: Lunes a Viernes de 9:00 a 18:00. Sábados de 9:00 a 13:00</p>
+          </div>
+        </div>
+        <br>
+        <div class="card frame-maps-suc">
+          <iframe class = "card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4405541152396!2d-77.00673838457499!3d-12.081963545847355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c62c82baa271%3A0x3d548dd63b06c6a9!2sAv.%20Aviaci%C3%B3n%202001%2C%20Cercado%20de%20Lima%2015021!5e0!3m2!1sen!2spe!4v1665348870906!5m2!1sen!2spe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Concesionario Automotive San Borja Lima"></iframe>
+          <div class="card-body">
+            <p class="texto-subtitulo">San Borja - Lima.</p>
+            <p class="card-text">Av. Aviación 2001.</p>
+            <p class="card-text">Horario: Lunes a Viernes de 9:00 a 18:00.</p>
+          </div>
+        </div>
+        <br>
+        <div class="card frame-maps-suc">
+          <iframe class = "card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.488741350624!2d-77.08245968457507!3d-12.078657045784741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c972cf801db7%3A0x6102b7995a11c27d!2sAv.%20la%20Marina%201705%2C%20San%20Miguel%2015086!5e0!3m2!1sen!2spe!4v1665348978881!5m2!1sen!2spe"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Concesionario Automotive San Miguel Lima"></iframe>
+          <div class="card-body">
+            <p class="texto-subtitulo">San Miguel - Lima.</p>
+            <p class="card-text">Av. La Marina 1705.</p>
+            <p class="card-text">Horario: Lunes a Viernes de 9:00 a 18:00.</p>
+          </div>
+        </div>
+        <br>
       </div>  
 
     </section>
