@@ -1,0 +1,31 @@
+$colores:
+    white, //Fondo pagina, titulos fondo difente a blanco
+    rgb(100, 99, 99), //Fondo footer
+    rgb(83, 82, 82), //color texto en general
+    rgb(11, 78, 180), //Subtitulo, Anuncio2, nosotros hover
+    rgb(0, 0, 0), // Subtitulo 2
+    rgb(117, 116, 116), //subtitulo 3
+    rgb(58, 58, 114), //color link
+    rgb(40, 135, 230), //color link visitado
+    #5a40d1, //color link hover
+    rgb(32, 32, 32),//anuncio
+    #adbff0, // border generalidades bg en index, nosotros izquierda normal
+    rgb(11, 78, 180), //hover en generalidades bg en index
+    #222222; //timeline
+
+    
+$nombrefuente:
+    Arial, //texto normal
+    'Fira Sans', //subtitulo3 y anuncio2
+    'Lucida Sans', //anuncio
+    'Gill Sans'; //menu item
+
+$sizefuente: //si se quiere personalizar tamaños, solo cambiamos las palabras por alguna medida
+    smaller,
+    medium,
+    large,
+    x-large,
+    xx-large,
+    small;
+
+   

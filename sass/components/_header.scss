@@ -1,0 +1,101 @@
+@import '../base/listas';
+@import '../base/mixins';
+
+/* Estilos para el header */
+
+header
+{
+    .nav-customizado
+    {
+        background-color:nth($colores,1);
+        @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,2));
+
+        li 
+        {
+            a 
+            {
+
+                & a:link
+                {
+                    color: nth($colores,7); 
+                }
+
+                & a:visited
+                {
+                    color:nth($colores,8);
+                }
+
+                & a:hover
+                {
+                color:nth($colores,9);
+                }
+
+            }
+
+        }
+    }
+
+    .anuncio 
+    {
+        background-color: nth($colores,10);
+        width: 100%;
+        @include display-justify-align (flex, center, center);
+        flex-wrap: wrap;
+        animation-duration: 6s;
+        animation-name: Mostrar-telefono;
+        animation-iteration-count: infinite;
+
+        & p{
+            @include fuente-tamanio (nth($nombrefuente,3), nth($sizefuente,2));
+            font-weight: 300;
+            color: nth($colores,1);
+            padding-top: 10px;
+            
+        }
+
+        .telefono-icon
+        {
+            height: 35px;
+            width: 35px;
+            padding: 5px;
+        }
+
+    }
+
+
+    .anuncio2 {
+        background-color: nth($colores,4);
+        width: 100%;
+        @include display-justify-align (flex, center, center);
+        flex-wrap: wrap;
+
+        & h1{
+
+            @include fuente-tamanio (nth($nombrefuente,2), nth($sizefuente,2));
+            text-align: center;
+            color: nth($colores,1);
+            padding: 4px;
+        }
+    }
+
+
+
+
+    .item-menu
+    {
+        @include fuente-tamanio (nth($nombrefuente,3), nth($sizefuente,3));
+        padding: 10px;
+        text-decoration: none;
+    }
+
+
+}
+
+.logo
+{
+    height: 85px;
+    width: 310px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*Fin de estilos para Header*/

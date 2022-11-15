@@ -1,0 +1,19 @@
+{
+  "name": "preentrega3munoztejeda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmunozt/PreEntrega3munoztejeda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmunozt/PreEntrega3munoztejeda/issues"
+  },
+  "homepage": "https://github.com/jmunozt/PreEntrega3munoztejeda#readme"
+}

@@ -1,0 +1,70 @@
+@import '../base/listas';
+@import '../base/mixins';
+
+/* Estilos Generales */
+
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+
+.no-vinetas
+{
+    list-style: none;
+}
+
+
+.texto-normal{
+    @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,2));
+    color: nth($colores,3); 
+}    
+    
+.texto-normal-bold{
+    @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,2));
+    font-weight: 600;
+    color: nth($colores,3);   
+    padding: 5px;
+}
+    
+  
+
+.texto-subtitulo{
+    @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,4));
+    font-weight: 600;
+    color:nth($colores,4); 
+    padding: 10px;
+}
+
+.texto-subtitulo2{
+    @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,5));
+    font-weight: 600;
+    color:nth($colores,5); 
+    padding: 15px;
+    @include display-justify-align (flex, center, center)
+}
+
+.texto-subtitulo3{
+    @include fuente-tamanio (nth($nombrefuente,2), nth($sizefuente,2));
+    font-weight: 200;
+    color:nth($colores,6); 
+    @include display-justify-align (flex, center, center)
+}
+
+
+.img-fondo-titulo
+{
+   width: 100%; 
+}
+
+
+.alerta-posicion
+{
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* Fin de estilos generales*/

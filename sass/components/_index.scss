@@ -1,0 +1,45 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/mixins';
+/*Inicio de estilos para página Index*/
+
+#generalidades
+{
+    margin: 15px;
+
+     h3
+    {
+        @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,2));
+        font-weight: 600;
+    }
+
+    li
+    {
+        @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,1));
+    }
+
+    .gen-texto1
+    {
+        @extend  %index-gentexto;
+    }
+
+
+
+    .gen-texto2
+    {
+        @extend  %index-gentexto;
+    }
+
+
+
+    .gen-texto3
+    {
+        @extend  %index-gentexto;
+    }
+
+
+
+}
+
+
+/*Fin de estilos para el página Index*/

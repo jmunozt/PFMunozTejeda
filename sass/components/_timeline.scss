@@ -1,0 +1,120 @@
+@import '../base/listas';
+@import '../base/mixins';
+/* timeline en Nosotros*/
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.timeline {
+    margin: 0;
+    @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,2));
+    background: nth($colores,1);				
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background: nth($colores,13);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+}
+
+
+.contenedor-time {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+}
+
+.contenedor-time.izquierda-time {
+    left: 0;
+}
+
+.contenedor-time.derecha-time {
+    left: 50%;
+}
+
+.contenedor-time .fecha-time {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: -30px;
+    padding: 4px 0;
+    background: nth($colores,13);
+    text-align: center;
+    font-size: 12px;
+    color: nth($colores,1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.contenedor-time.derecha-time .fecha-time {
+    left: -30px;
+}
+
+.contenedor-time .fecha-time span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contenedor-time .contenido-time {
+    padding: 30px;
+    background: nth($colores,1);
+    position: relative;
+
+    h2 
+    {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        font-weight: normal;
+        color: nth($colores,13); 
+    }
+
+    p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: #666666;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+    .timeline::after {
+        left: 60px;
+    }
+
+    .contenedor-time {
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 30px;
+    }
+    
+    .contenedor-time.derecha-time {
+        left: 0%;
+    }
+
+    .contenedor-time.izquierda-time .fecha-time, 
+    .contenedor-time.derecha-time .fecha-time {
+        left: 30px;
+    }
+}
+
+/* Fin de timeline en Nosotros*/

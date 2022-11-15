@@ -1,0 +1,80 @@
+@import '../base/listas';
+@import '../base/mixins';
+/*Media query*/
+
+@media only screen and (min-width: 100px) and (max-width: 500px)
+ {
+    .logo
+    {
+        height: 53px;
+        width: 180px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }    
+
+    .item-menu
+    {
+        @include fuente-tamanio(nth($nombrefuente,4), nth($sizefuente,6));
+        font-weight: 100;
+        padding: 6px;
+        text-decoration: none;
+    }
+
+    .item-seleccion
+    {
+        width: 180px;
+        height: 69px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 980px)
+ {
+    .logo
+    {
+        height: 60px;
+        width: 212px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }    
+
+    .item-menu
+    {
+        @include fuente-tamanio(nth($nombrefuente,4), nth($sizefuente,2));
+        padding: 8px;
+        text-decoration: none;
+    }
+
+    .item-seleccion
+    {
+        width: 220px;
+        height: 85px;
+    }
+}
+
+
+
+/*Fin de media query*/
+
+
+/*Animaciones*/
+
+@keyframes Mostrar-telefono 
+{
+    0% 
+    {opacity: 0;}
+    
+    20% 
+    {opacity: 1;}
+    
+    80% 
+    {opacity: 1;}
+    
+    100%
+    {opacity: 0;}
+
+}
+
+/*Fin de Animaciones*/

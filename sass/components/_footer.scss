@@ -1,0 +1,46 @@
+@import '../base/listas';
+@import '../base/mixins';
+/*Estilos para el Footer*/
+
+footer
+{
+    background-color: nth($colores,2); 
+
+    .footer-customizado p
+    {
+        @include fuente-tamanio (nth($nombrefuente,1), nth($sizefuente,1));
+        color:nth($colores,1);
+        padding-top: 5px;
+    }
+
+    .footer-izquierdo
+    {
+        @include display-justify-align (flex, center, center);
+    }
+
+
+    .footer-derecho
+    {
+        @include display-justify-align (flex, center, center);
+        
+        &  li
+        {
+            display: inline;
+            padding-right: 10px;
+        }
+        
+        
+        & img
+        {
+            padding-top: 5px;
+            height: 30px;
+            width: 30px;
+        }
+
+    }
+
+
+}
+
+
+/*Fin de estilos para el footer*/

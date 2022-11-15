@@ -1,0 +1,16 @@
+@import '../base/listas';
+@import '../base/mixins';
+/*Inicio de estilos para página contacto*/
+
+.formulario
+{
+    padding: 20px;
+
+    .boton-formulario
+    {
+        @include display-justify-align (flex, center, center);
+
+    }
+}
+
+/*Fin de estilos para el página contacto*/

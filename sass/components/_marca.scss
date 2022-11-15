@@ -1,0 +1,35 @@
+@import '../base/listas';
+@import '../base/mixins';
+/*Inicio de estilos para página Marcas*/
+
+#marcas
+{
+    .marcas-titulo-flex
+    {
+        @include display-justify-align (flex, center, center);
+        padding: 15px;
+    }
+
+    .filas-marcas
+    {
+        padding: 20px;
+        text-align: center;
+        @include display-justify-align (flex, center, center);
+    }
+
+}
+
+.item-seleccion
+{
+    width: 250px;
+    height: 96px;
+
+    &:hover
+    {
+        transform: translate(10px,10px);
+        transition: all 0.8s;
+    }
+
+}
+
+/*Fin de estilos para el página marcas*/

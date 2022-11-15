@@ -1,0 +1,32 @@
+
+@import '../base/listas';
+@import '../base/mixins';
+/*Inicio de estilos para página Nosotros*/
+#nosotros
+{
+
+    background-color: nth($colores,1);
+    
+    .nosotros-izquierda
+    {
+        padding: 20px;
+        text-align: justify;
+        background-color: #eff2ff;
+    }
+
+    .nosotros-izquierda:hover
+    {
+        transition: all 2s;
+        background-color: nth($colores,4);
+        background-color: nth($colores,11);
+        border-color: rgb(104, 163, 250);
+    }
+
+    .nosotros-derecha
+    {
+        padding: 20px;
+        text-align: justify;
+    }
+
+}
+/*Fin de estilos para el página Nosotros*/

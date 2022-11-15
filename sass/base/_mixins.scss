@@ -1,0 +1,11 @@
+@mixin display-justify-align ($display_tipo, $justify, $alinea) {
+    display: $display_tipo;
+    justify-content: $justify;
+    align-items: $alinea;
+}
+
+
+@mixin fuente-tamanio ($fuente-grupo, $tamanio) {
+    font-family: $fuente-grupo;
+    font-size: $tamanio;
+}
